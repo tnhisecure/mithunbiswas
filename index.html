@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+<p id="demo"></p>
+<script>
+         var lamt = prompt("Please Enter Loan Amount which you taken 10th Dec 2020", "10000");
+         var  interest = prompt("Please Enter Per Month Interest (%)", "7.5");
+         var a = (lamt*interest)/100;
+         var b = Number(a)+Number(lamt);
+
+         var c = Number(b)*interest/100;
+         var d = Number(c)+Number(b);
+
+         var e = Number(d)*interest/100;
+         var f = Number(e)+Number(d);
+         
+         var g = Number(f)*interest/100;
+         var h = Number(g)+Number(f);
+
+         var i = Number(h)*interest/100;
+         var j = Number(h)+Number(i);
+
+         var k = Number(j)*interest/100;
+         var l = Number(j)+Number(k);
+
+         var m = Number(l)*interest/100;
+         var n = Number(l)+Number(m);
+
+         var o = Number(n)*interest/100;
+         var p = Number(n)+Number(o);
+
+         var q = Number(p)*interest/100;
+         var r = Number(p)+Number(q);
+
+         var s = Number(r)*interest/100;
+         var t = Number(r)+Number(s);
+
+         var u = Number(t)*interest/100;
+         var v = Number(t)+Number(u);
+   
+         document.getElementById("demo").innerHTML = "<u><h3>Statement:</u></h3>"+"<br>"+"<b><li>Your (10th Dec 2020 to 10th Jan 2021) Interest Amount :"+ a.toFixed(2)+"<br>"+"Till 10th Jan 2021 Total Loan Amount :"+ b.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th Jan 2021 to 10th Feb 2021) Interest Amount :"+ c.toFixed(2)+"<br>"+"Till 10th Feb 2021 Total Loan Amount :"+ d.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th Feb 2021 to 10th March 2021) Interest Amount :"+ e.toFixed(2)+"<br>"+"Till 10th March 2021 Total Loan Amount :"+ f.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th March 2021 to 10th April 2021) Interest Amount :"+ g.toFixed(2)+"<br>"+"Till 10th April 2021 Total Loan Amount :"+ h.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th April 2021 to 10th May 2021) Interest Amount :"+ i.toFixed(2)+"<br>"+"Till 10th May 2021 Total Loan Amount :"+ j.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th May 2021 to 10th June 2021) Interest Amount :"+ k.toFixed(2)+"<br>"+"Till 10th June 2021 Total Loan Amount :"+ l.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th June 2021 to 10th July 2021) Interest Amount :"+ m.toFixed(2)+"<br>"+"Till 10th July 2021 Total Loan Amount :"+ n.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th July 2021 to 10th Aug 2021) Interest Amount :"+ o.toFixed(2)+"<br>"+"Till 10th Aug 2021 Total Loan Amount :"+ p.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th Aug 2021 to 10th Sept 2021) Interest Amount :"+ q.toFixed(2)+"<br>"+"Till 10th Sept 2021 Total Loan Amount :"+ r.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th Sept 2021 to 10th Oct 2021) Interest Amount :"+ s.toFixed(2)+"<br>"+"Till 10th Oct 2021 Total Loan Amount :"+ t.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th Oct 2021 to 10th Nov 2021) Interest Amount :"+ u.toFixed(2)+"<br>"+"Till 10th Nov 2021 Total Loan Amount :"+ v.toFixed(2)+"<br></b></li>"+
+   "<h3>To Be Paid Rs : " +v.toFixed(2)+"/-</h3>";
+         ;
+         
+    </script>
+</body>
+</html>
