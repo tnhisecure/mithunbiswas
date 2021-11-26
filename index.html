@@ -48,23 +48,30 @@
 
          var u = Number(t)*interest/100;
          var v = Number(t)+Number(u);
-   
-         document.getElementById("demo").innerHTML = "<b><li>Your (10th Dec 2020 to 10th Jan 2021) Interest Amount :"+ a.toFixed(2)+"<br>"+"Till 10th Jan 2021 Total Loan Amount :"+ b.toFixed(2)+"<br><br></li>"+
-         "<li>Your (10th Jan 2021 to 10th Feb 2021) Interest Amount :"+ c.toFixed(2)+"<br>"+"Till 10th Feb 2021 Total Loan Amount :"+ d.toFixed(2)+"<br><br></li>"+
-         "<li>Your (10th Feb 2021 to 10th March 2021) Interest Amount :"+ e.toFixed(2)+"<br>"+"Till 10th March 2021 Total Loan Amount :"+ f.toFixed(2)+"<br><br></li>"+
-         "<li>Your (10th March 2021 to 10th April 2021) Interest Amount :"+ g.toFixed(2)+"<br>"+"Till 10th April 2021 Total Loan Amount :"+ h.toFixed(2)+"<br><br></li>"+
-         "<li>Your (10th April 2021 to 10th May 2021) Interest Amount :"+ i.toFixed(2)+"<br>"+"Till 10th May 2021 Total Loan Amount :"+ j.toFixed(2)+"<br><br></li>"+
-         "<li>Your (10th May 2021 to 10th June 2021) Interest Amount :"+ k.toFixed(2)+"<br>"+"Till 10th June 2021 Total Loan Amount :"+ l.toFixed(2)+"<br><br></li>"+
-         "<li>Your (10th June 2021 to 10th July 2021) Interest Amount :"+ m.toFixed(2)+"<br>"+"Till 10th July 2021 Total Loan Amount :"+ n.toFixed(2)+"<br><br></li>"+
-         "<li>Your (10th July 2021 to 10th Aug 2021) Interest Amount :"+ o.toFixed(2)+"<br>"+"Till 10th Aug 2021 Total Loan Amount :"+ p.toFixed(2)+"<br><br></li>"+
-         "<li>Your (10th Aug 2021 to 10th Sept 2021) Interest Amount :"+ q.toFixed(2)+"<br>"+"Till 10th Sept 2021 Total Loan Amount :"+ r.toFixed(2)+"<br><br></li>"+
-         "<li>Your (10th Sept 2021 to 10th Oct 2021) Interest Amount :"+ s.toFixed(2)+"<br>"+"Till 10th Oct 2021 Total Loan Amount :"+ t.toFixed(2)+"<br><br></li>"+
-         "<li>Your (10th Oct 2021 to 10th Nov 2021) Interest Amount :"+ u.toFixed(2)+"<br>"+"Till 10th Nov 2021 Total Loan Amount :"+ v.toFixed(2)+"<br><br></b></li>"+
-   "<h3>To Be Paid Rs : " +v.toFixed(2)+"/-</h3>";
+
+         var v3 = Number(v)*interest/100;
+         var v1 = (v3/30)*17;
+         var v2 = Number(v)+Number(v1);
+
+         document.getElementById("demo").innerHTML = "<b><li>Your (10th Dec 2020 to 09th Jan 2021(30 Days)) Interest Amount :"+ a.toFixed(2)+"<br>"+"Till 09th Jan 2021 Total Loan Amount :"+ b.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th Jan 2021 to 08th Feb 2021 (30 Days)) Interest Amount :"+ c.toFixed(2)+"<br>"+"Till 08th Feb 2021 Total Loan Amount :"+ d.toFixed(2)+"<br><br></li>"+
+         "<li>Your (09th Feb 2021 to 10th March 2021 (30 Days)) Interest Amount :"+ e.toFixed(2)+"<br>"+"Till 10th March 2021 Total Loan Amount :"+ f.toFixed(2)+"<br><br></li>"+
+         "<li>Your (11th March 2021 to 09th April 2021 (30 Days)) Interest Amount :"+ g.toFixed(2)+"<br>"+"Till 09th April 2021 Total Loan Amount :"+ h.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th April 2021 to 09th May 2021 (30 Days)) Interest Amount :"+ i.toFixed(2)+"<br>"+"Till 09th May 2021 Total Loan Amount :"+ j.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th May 2021 to 08th June (30 Days)) Interest Amount :"+ k.toFixed(2)+"<br>"+"Till 08th June 2021 Total Loan Amount :"+ l.toFixed(2)+"<br><br></li>"+
+         "<li>Your (09th June 2021 to 08th July 2021 (30 Days)) Interest Amount :"+ m.toFixed(2)+"<br>"+"Till 08th July 2021 Total Loan Amount :"+ n.toFixed(2)+"<br><br></li>"+
+         "<li>Your (09th July 2021 to 07th Aug 2021 (30 Days)) Interest Amount :"+ o.toFixed(2)+"<br>"+"Till 07th Aug 2021 Total Loan Amount :"+ p.toFixed(2)+"<br><br></li>"+
+         "<li>Your (08th Aug 2021 to 06th Sept 2021 (30 Days)) Interest Amount :"+ q.toFixed(2)+"<br>"+"Till 06th Sept 2021 Total Loan Amount :"+ r.toFixed(2)+"<br><br></li>"+
+         "<li>Your (07th Sept 2021 to 06th Oct 2021 (30 Days)) Interest Amount :"+ s.toFixed(2)+"<br>"+"Till 06th Oct 2021 Total Loan Amount :"+ t.toFixed(2)+"<br><br></li>"+
+         "<li>Your (07th Oct 2021 to 05th Nov 2021 (30 Days)) Interest Amount :"+ u.toFixed(2)+"<br>"+"Till 05th Nov 2021 Total Loan Amount :"+ v.toFixed(2)+"<br><br></li>"+
+         "<li>Your (06th Nov 2021 to 22nd Nov 2021 (17 Days)) Interest Amount :"+ v1.toFixed(2)+"<br>"+"Till 22nd Nov 2021 Total Loan Amount :"+ v2.toFixed(2)+"<br><br></li>"+
+         "<li style = color:green> You Piad Rs 5000/- on 22nd Nov 2021</style></li><br><br></b>"+
+
+         "<h3 style =color:red>To Be Paid Rs : " +(v2-5000).toFixed(2)+"/-</h3></style>";
          
          
     </script>
-    <center><a href="https://tnhisecure.github.io/mithunbiswas/" class="btn btn-outline-primary" role="button">Okey</a></center>
+    <center><a href="" class="btn btn-outline-primary" role="button">Okey</a></center>
 
     <br><br>
    
