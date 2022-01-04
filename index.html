@@ -52,12 +52,18 @@
          var v3 = Number(v)*interest/100;
          var v1 = (v3/30)*17;
          var v2 = Number(v)+Number(v1);
-
-         var q1 = v2-5000;
+        var q1 = v2-5000;
 
          var q2 =Number(q1)*interest/100;
          var q3 = (q2/30)*19;
          var q4 = q3+q1;
+         var q5 = q4-5000;
+
+       
+         var q6 =Number(q5)*interest/100;
+         var q7 = (q6/30)*25;
+         var q8 = q7+q5;
+         var q9 = q8-10000;
 
 
 
@@ -73,10 +79,16 @@
          "<li>Your (07th Sept 2021 to 06th Oct 2021 (30 Days)) Interest Amount :"+ s.toFixed(2)+"<br>"+"Till 06th Oct 2021 Total Loan Amount :"+ t.toFixed(2)+"<br><br></li>"+
          "<li>Your (07th Oct 2021 to 05th Nov 2021 (30 Days)) Interest Amount :"+ u.toFixed(2)+"<br>"+"Till 05th Nov 2021 Total Loan Amount :"+ v.toFixed(2)+"<br><br></li>"+
          "<li>Your (06th Nov 2021 to 22nd Nov 2021 (17 Days)) Interest Amount :"+ v1.toFixed(2)+"<br>"+"Till 22nd Nov 2021 Total Loan Amount :"+ v2.toFixed(2)+"<br><br></li>"+
-         "<li style = color:green> You Piad Rs 5000/- on 22nd Nov 2021</style></li><br><br>"+
-         "<li>Your (23rd Nov 2021 to 11th Dec 2021 (19 Days)) Interest Amount :"+ q3.toFixed(2)+"<br>"+"Till 11th Dec 2021 Total Loan Amount :"+ q4.toFixed(2)+"<br><br></li>"+
-         "<li style = color:green> You Piad Rs 5000/- on 11th Dec 2021</style></li><br><br></b>"+
-         "<h3 style =color:red>To Be Paid Rs : " +(q4-5000).toFixed(2)+"/-</h3></style>";
+         "<li style = color:green> You Piad Rs 5000/- on 22nd Nov 2021</style></li>"+
+         "<li>Your Loan Amount Till 22nd Nov 2021: "+q1.toFixed(2)+"/-</li>"+"<br><br>"+
+         "<li>Your (23rd Nov 2021 to 11th Dec 2021 (19 Days)) Interest Amount : "+ q3.toFixed(2)+"<br>"+"Till 11th Dec 2021 Total Loan Amount :"+ q4.toFixed(2)+"<br><br></li>"+
+         "<li style = color:green> You Piad Rs 5000/- on 11th Dec 2021</style></li>"+
+         "<li>Your Loan Amount Till 11th Dec 2021: "+q5.toFixed(2)+"/-</li>"+"<br><br>"+
+         
+         "<li>Your (11th Dec 2021 to 4th Jan 2022 (25 Days)) Interest Amount : "+ q7.toFixed(2)+"<br>"+"Till 04th Dec 2022 Total Loan Amount :"+ q8.toFixed(2)+"<br><br></li>"+
+         "<li style = color:green> You Piad Rs 10000/- on ) 4th Jan 2022</style></li><br><br>"+
+         "<li>Your Loan Amount Till 04th Jan 2022: "+q9.toFixed(2)+"/-</li></b>"+
+         "<h3 style =color:red>To Be Paid Rs : " +q9.toFixed(2)+"/-</h3></style>";
          
          
     </script>
